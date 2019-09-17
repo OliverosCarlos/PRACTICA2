@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TPDM_U1_PRACTICA2</string>
+    <array name="listOption">
+        <item>Capturar valores</item>
+        <item>Mostrar valores</item>
+        <item>Acerca de...</item>
+        <item>Salir</item>
+    </array>
+</resources>
