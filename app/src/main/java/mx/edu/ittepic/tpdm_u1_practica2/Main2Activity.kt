@@ -70,8 +70,8 @@ class Main2Activity : AppCompatActivity() {
         if(opcion == "matriz"){
             celdillas = intent.extras?.getInt("numCell")
             renglones = intent.extras?.getInt("numRen")
-            gridLay?.rowCount = celdillas!!
-            gridLay?.columnCount = renglones!!
+            gridLay?.rowCount = renglones!!
+            gridLay?.columnCount = celdillas!!
             cadena += "M$celdillas"+"x$renglones-"
             Toast.makeText(this,"Matriz de tamaño $celdillas x $renglones ", Toast.LENGTH_SHORT).show()
         }
@@ -88,6 +88,7 @@ class Main2Activity : AppCompatActivity() {
 
                 generarLabel(valor,celdilla,0)
             }
+
             if(opcion == "matriz"){
                 valor = txtV?.text.toString()
                 celdilla = txtC?.text.toString().toInt()
@@ -137,11 +138,4 @@ class Main2Activity : AppCompatActivity() {
         Toast.makeText(this,"Datos guardados con exito", Toast.LENGTH_SHORT).show()
     }
 
-    fun getDatos(vect : Array<String>):String{
-        var cadena : String = ""
-        (1..10).forEach {
-            cadena += ","+vect[it]
-        }
-        return cadena
-    }
 }

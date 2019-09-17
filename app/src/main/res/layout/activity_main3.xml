@@ -68,17 +68,20 @@
         android:id="@+id/textPrueba"
         />
 
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/showGL"
-        >
-
-    </GridLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Exportar a XLS"/>
+        android:text="Exportar a XLS"
+        android:id="@+id/exportar"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/showGL"
+        >
+
+    </GridLayout>
 
 </LinearLayout>
